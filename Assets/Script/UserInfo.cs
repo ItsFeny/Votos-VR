@@ -7,8 +7,8 @@ public class UserInfoDisplayer : MonoBehaviour
 {
     public TMP_Text nombreText;
     public TMP_Text cedulaText;
-    public Usuario[] usuarios; // Array de usuarios para asociar la cédula verificada con el usuario correcto
-    public Image imagenUsuario; // Asigna el GameObject que contiene el componente Image en el editor de Unity
+    public Usuario[] usuarios; 
+    public Image imagenUsuario; 
 
     private void Start()
     {
@@ -38,7 +38,7 @@ public class UserInfoDisplayer : MonoBehaviour
             {
                 // Asignar la imagen al componente de imagen
                 imagenUsuario.sprite = usuarioVerificado.imagen;
-                imagenUsuario.preserveAspect = true; // Esto mantendrá la relación de aspecto de la imagen
+                imagenUsuario.preserveAspect = true; 
             }
             else
             {
