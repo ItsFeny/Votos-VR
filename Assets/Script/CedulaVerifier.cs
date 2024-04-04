@@ -1,4 +1,3 @@
-// CedulaVerifier.cs
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
