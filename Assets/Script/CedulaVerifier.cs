@@ -8,6 +8,13 @@ public class Usuario
 {
     public string cedula;
     public string nombre;
+    public string fechaNacimiento;
+    public string fechaexpiracion;
+    public string lugarNacimiento;
+    public string sexo;
+    public string sangre;
+    public string estadocivil;
+    public string ocupacion;
     public Sprite imagen;
 }
 
@@ -33,6 +40,13 @@ public class CedulaVerifier : MonoBehaviour
             {
                 PlayerPrefs.SetString("NombreUsuario", usuario.nombre);
                 PlayerPrefs.SetString("CedulaUsuario", usuario.cedula);
+                PlayerPrefs.SetString("NacimientoUsuario", usuario.fechaNacimiento);
+                PlayerPrefs.SetString("FechaUsuario", usuario.fechaexpiracion);
+                PlayerPrefs.SetString("LugarUsuario", usuario.lugarNacimiento);
+                PlayerPrefs.SetString("SexoUsuario", usuario.sexo);
+                PlayerPrefs.SetString("SangreUsuario", usuario.sangre);
+                PlayerPrefs.SetString("EstadoUsuario", usuario.estadocivil);
+                PlayerPrefs.SetString("OcupacionUsuario", usuario.ocupacion);
                 SceneManager.LoadScene(1);
                 return;
             }

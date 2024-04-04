@@ -28,7 +28,7 @@ public class Voto : MonoBehaviour
             button.transform.GetChild(0).gameObject.SetActive(true);
 
             Debug.Log("Voto");
-
+            SceneManager.LoadScene(2);
             // Iniciar la rutina para confirmar el voto
             StartCoroutine(ConfirmarVoto());
         }
